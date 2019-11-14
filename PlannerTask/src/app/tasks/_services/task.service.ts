@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 export class TaskService extends HttpCRUDService{
 
   constructor(http: HttpClient) {
-    super(http,'tasks');
+    super(http,'Task');
   }
 
 }

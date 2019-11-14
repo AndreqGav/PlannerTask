@@ -28,7 +28,7 @@ export class DataBaseTableComponent<M> implements OnInit {
   @Output() rowClickEvent = new EventEmitter();
 
   @ViewChild(MatPaginator, {static: true}) paginator: MatPaginator;
-  @ViewChild(MatSort, {static: true}) sort: MatSort; // todo: доделать
+  @ViewChild(MatSort, {static: true}) sort: MatSort; // todo: доделать, а то не получается сортировка
 
   constructor() { }
 

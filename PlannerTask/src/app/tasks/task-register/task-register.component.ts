@@ -1,9 +1,10 @@
 import {Component, OnInit, ViewChild, Input} from '@angular/core';
-import {MatPaginator, MatTabGroup, MatTableDataSource} from '@angular/material';
+import {MatTableDataSource} from '@angular/material';
 import {ITaskRegistryView} from '../_models/task-registry-view';
-import {DataBaseTableComponent} from "../../_shared/data-base-table/data-base-table.component";
 import {ITaskView} from "../_models/task-view";
 import {TaskService} from "../_services/task.service";
+
+// todo: мб сделать резолвер для регистра
 
 @Component({
   selector: 'app-task-register',
@@ -23,7 +24,8 @@ export class TaskRegisterComponent implements OnInit {
   }
 
   ngOnInit() {
-   // this.dataSource = new MatTableDataSource<ITaskRegistryView>(ELEMENT_DATA);
+    // если не получится взять из БД, то раскоментить здесь и закоментить this.getDataSource();
+    // this.dataSource = new MatTableDataSource<ITaskRegistryView>(ELEMENT_DATA);
     this.getDataSource();
 
     this.columns = [
@@ -55,6 +57,9 @@ export class TaskRegisterComponent implements OnInit {
   }
 
   onRowClick(args) {
+    // если не получится взять из БД, то раскоментить здесь и закоментить остальное содержимое этого метода
+    //this.selectedValue = ELEMENT_FORM_DATA;
+
     const id = args.record.id;
     this.service.getById<ITaskView>(id).subscribe(
       data => {
@@ -77,6 +82,7 @@ export class TaskRegisterComponent implements OnInit {
   }
 }
 
+// не нужно
 const ELEMENT_DATA: ITaskRegistryView[] = [
   {id: '0', date: new Date().toDateString(), header: 'заголовок_1', priority: 'низкий', state: 'В работе'},
   {id: '1', date: new Date().toDateString(), header: 'заголовок_2', priority: 'средний', state: 'Завершен'},
@@ -97,6 +103,7 @@ const ELEMENT_DATA: ITaskRegistryView[] = [
   {id: '16', date: new Date().toDateString(), header: 'заголовок_17', priority: 'средний', state: 'В работе'},
 ];
 
+// не нужно
 const ELEMENT_FORM_DATA : ITaskView = {
   header: 'лечь спать',
   date: new Date().toDateString(),

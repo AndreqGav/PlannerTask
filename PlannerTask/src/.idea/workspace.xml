@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fef2b98e-9425-42c6-b5c5-60703a3a976b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/_shared/data-base-table/data-base-table-column.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/_global.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/scss/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/_shared/data-base-table/data-base-table.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/_shared/data-base-table/data-base-table.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tasks/task-form/task-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/tasks/task-form/task-form.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tasks/task-form/task-form.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tasks/task-form/task-form.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/tasks/task-form/task-form.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tasks/task-register/task-register.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/tasks/task-register/task-register.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tasks/task-register/task-register.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/tasks/task-register/task-register.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tasks/_services/task.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/tasks/_services/task.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/tasks/task-register/task-register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/tasks/task-register/task-register.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/tasks/tasks.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/tasks/tasks.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/styles.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,6 +34,11 @@
     <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Andreq\Angels\PlannerTask\PlannerTask\src\app\_shared" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -70,7 +67,7 @@
       <workItem from="1573676515854" duration="715000" />
       <workItem from="1573677611710" duration="1173000" />
       <workItem from="1573679459743" duration="4407000" />
-      <workItem from="1573684021601" duration="9486000" />
+      <workItem from="1573684021601" duration="12365000" />
     </task>
     <servers />
   </component>
