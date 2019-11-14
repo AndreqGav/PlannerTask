@@ -1,1 +1,55 @@
-<p>task-form works!</p>
+<div [formGroup]="formGroup" class="form-container">
+  <fieldset class="main-form">
+    <div class="mg-t main-information-container">
+
+      <div class="mg-t">
+        <mat-form-field class="form-field">
+          <input matInput formControlName="header" placeholder="Заголовок">
+        </mat-form-field>
+      </div>
+
+      <div class="mg-t">
+        <mat-form-field class="form-field">
+          <input matInput formControlName="date" placeholder="Дата">
+        </mat-form-field>
+      </div>
+
+      <div class="mg-t">
+        <mat-form-field class="form-field">
+          <input matInput formControlName="description" placeholder="Описание">
+        </mat-form-field>
+      </div>
+
+      <div class="mg-t">
+        <mat-form-field class="form-field">
+          <input matInput formControlName="state" placeholder="Состояние">
+        </mat-form-field>
+      </div>
+
+      <div class="mg-t">
+        <mat-form-field class="form-field">
+          <input matInput formControlName="priority" placeholder="Приоритет">
+        </mat-form-field>
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+<div class="bottom-form-buttons-container">
+  <button class="control-button"
+          mat-button
+          mat-icon-button
+          (click)="close()">
+    Закрыть
+  </button>
+</div>
+
+<div class="bottom-form-buttons-container">
+  <button class="control-button"
+          mat-button
+          mat-icon-button
+          (click)="save()">
+    Сохранить
+  </button>
+</div>
+

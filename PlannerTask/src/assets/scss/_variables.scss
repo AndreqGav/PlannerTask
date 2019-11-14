@@ -1,0 +1,23 @@
+$default-cell-length: 8px;
+
+//colors
+$primary-color: #2979FF;
+$danger-color: #dc3545;
+$link-color: #205081;
+$gray-color: #c4c4c4;
+$dark-gray-color: #757575;
+$default-background-color: #fff;
+$default-active-color: linear-gradient(171.18deg, #DEF1FF 43.11%, #FCE4EC 100%);
+
+$sub-header-font-size: $default-cell-length * 3;
+
+$row-hover-color: #DEF1FF;
+$disabled-cap-color: rgba(0, 0, 0, 0.1);
+
+$header-height: $default-cell-length * 8;
+$footer-height: $default-cell-length * 5;
+
+$default-margin: $default-cell-length * 3;
+$default-padding: $default-cell-length * 3;
+
+$default-font-family: Roboto, "Helvetica Neue", sans-serif;

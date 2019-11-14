@@ -1,4 +1,96 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+// почему-то @import "" не работает, поэтому так сделал пока
+// для регистра
+$default-active-color: linear-gradient(171.18deg, #DEF1FF 43.11%, #FCE4EC 100%);
+$row-hover-color: #DEF1FF;
+$disabled-cap-color: rgba(0, 0, 0, 0.1);
+
+.table-container {
+  position: relative;
+
+  .disabled-table-cap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: $disabled-cap-color;
+  }
+}
+
+::ng-deep .header-text-center {
+  .mat-sort-header-button {
+    justify-content: center;
+  }
+}
+
+.table-responsive {
+  width: 100%;
+}
+
+.table-hover {
+  .mat-row {
+    cursor: pointer;
+
+    &:hover {
+      background-color: $row-hover-color;
+    }
+  }
+}
+
+.empty-text {
+  font-size: 24px;
+  padding: 20px;
+  background: white;
+}
+
+.column-action {
+  &.mat-header-cell {
+    padding: 0px;
+    width: 60px;
+  }
+
+  &.mat-cell {
+    padding: 0px;
+    text-align: center;
+  }
+}
+
+.arrow-indentation {
+  display: inline;
+}
+
+::ng-deep .mat-paginator-range-label {
+  display: none;
+}
+
+.selected-row {
+  background: $default-active-color;
+}
+
+
+// для формы
+$default-cell-length: 8px;
+
+.information-container {
+  display: flex;
+
+  > span {
+    width: 33%;
+    display: block;
+  }
+}
+
+.form-container {
+  width: calc(60 * #{$default-cell-length});
+}
+
